@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock X Calender</title>
+    <title> Clock X Calender </title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <div class="container">
-        <img src="npcsblack.png" id="image" height="60px" width="60px" >
-        <p>  n-pcs </p>
+    <div class="container"><img src="npcsblack.png" id="image" height="60px" width="60px">
+        <p> n-pcs </p>
         <div class="time-display">
             <div class="time" id="time">00:00</div>
             <div class="seconds" id="seconds">00</div>
         </div>
-        
+
         <div class="date-display">
             <div class="date" id="date">January 1, 2023</div>
             <div class="day" id="day">Monday</div>
         </div>
-        
+
+        <div class="calendar-controls">
+            <button id="prev-month" class="month-nav">←</button>
+            <h2 id="month-year" class="month-title">January 2023</h2>
+            <button id="next-month" class="month-nav">→</button>
+        </div>
+
         <div class="calendar-header">
             <div>Sun</div>
             <div>Mon</div>
@@ -31,10 +37,17 @@
             <div>Fri</div>
             <div>Sat</div>
         </div>
-        
-        <div class="calendar" id="calendar"></div>
+
+        <div class="calendar-container">
+            <div class="calendar" id="calendar"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
+</html>
+<script src="script.js"></script>
+</body>
+
 </html>
